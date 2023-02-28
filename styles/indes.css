@@ -16,6 +16,12 @@ body{
     letter-spacing: 1px;
 }
 
+main{
+    height: 100vh;
+    background-color: chocolate; /*borrar mas tarde */
+    /* borrar mas tarde */
+}
+
 a{
     text-decoration: none;
 }
