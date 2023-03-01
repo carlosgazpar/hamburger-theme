@@ -26,6 +26,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
 .container{
     max-width: 1200px;
     margin: 80px auto 50px auto;
@@ -37,14 +41,4 @@ a{
     max-width: 1263px;
     padding: 50px 16px;
     position: relative;
-}
-
-.menu-link{
-    font-size: 14px;
-    line-height: 27px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: fit-content;
-    margin: 0 auto;
 }
