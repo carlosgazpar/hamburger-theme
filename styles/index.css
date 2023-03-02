@@ -16,18 +16,27 @@ body{
     letter-spacing: 1px;
 }
 
-main{
-    height: 100vh;
-    background-color: chocolate; /*borrar mas tarde */
-    /* borrar mas tarde */
-}
-
 a{
     text-decoration: none;
 }
 
 li{
     list-style: none;
+}
+
+h2{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+h6{
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .container{

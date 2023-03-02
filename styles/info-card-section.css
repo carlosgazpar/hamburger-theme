@@ -1,0 +1,61 @@
+.info-cards-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.info-cards-section .info-card{
+    text-align: center;
+    padding: 140px 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-cards-section .info-card:not(:nth-child(2)){
+    background-image: url(../img/background-info-card.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-cards-section .info-card:nth-child(2){
+    background-color: #B94A50;
+}
+
+.info-cards-section .info-card:nth-child(2)::before{
+    content: 'Burger';
+    position: absolute;
+    bottom: -20px;
+    left: -60px;
+    font-family: 'Fredericka the Great';
+    font-size: 130px;
+    line-height: 130px;
+    color: rgba(0, 0, 0, .085);
+}
+
+.info-cards-section .info-card .info-card-link{
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .info-cards-section{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px 0;
+    }
+    .info-cards-section .info-card:nth-child(2)::before{
+        display: none;
+    }
+}
+
+
+
