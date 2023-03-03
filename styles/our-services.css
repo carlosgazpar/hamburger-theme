@@ -1,0 +1,28 @@
+.our-services{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.our-services-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.our-services-cards .our-service-card{
+    background: linear-gradient(to bottom, rgba(45,45,45,0.15) 0%,rgba(45,45,45,0.5) 75%,rgba(45,45,45,1) 100%);
+
+}
+.our-services-cards .our-service-card:last-child{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.our-services-cards .our-service-card img{
+    width: 100%; 
+}
