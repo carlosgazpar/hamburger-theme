@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/info-card-section.css">
     <link rel="stylesheet" href="styles/our-services.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
-
     <!-- inicio de header -->
 
     <header>
@@ -161,26 +161,60 @@
 <!-- inicio de our services -->
 
     <div class="our-services">
+        <div class="headings-container">
+            <h2>Best Solutions</h2>
+            <h1>Our Services</h1>
+        </div>
         <div class="our-services-cards">
             <div class="our-service-card">
                 <img src="img/our-services-1.jpg" alt="Our services 1" title="Our Services 1">
-                
+                <div class="card-overlay">
+                    <span class="card-price">$ 38</span>
+                    <h3>Sweet Cheeses</h3>
+                </div>
             </div>
             <div class="our-service-card">
-                <img src="img/our-services-2.jpg" alt="Our services 2" title="Our Services 2">
+                <img src="img/our-services-2.jpg" alt="Our services 2" title="Our Services 2">                
+                <div class="card-overlay">
+                    <span class="card-price card-price-yellow">$ 32</span>
+                    <h3>Fresh Fish</h3>
+                </div>
+
             </div>
             <div class="our-service-card">
-                <img src="img/our-services-3.jpg" alt="Our services 3" title="Our Services 3">
+                <img src="img/our-services-3.jpg" alt="Our services 3" title="Our Services 3">                
+                <div class="card-overlay">
+                    <span class="card-price">$ 26</span>
+                    <h3>Bean Soup</h3>
+                </div>
+
             </div>
             <div class="our-service-card">
-                <img src="img/our-services-4.jpg" alt="Our services 4" title="Our Services 4">
+                <img src="img/our-services-4.jpg" alt="Our services 4" title="Our Services 4">                
+                <div class="card-overlay">
+                    <span class="card-price card-price-yellow">$ 18</span>
+                    <h3>Vegetables</h3>
+                </div>
+
             </div>
             <div class="our-service-card">
                 <img src="img/our-services-5.jpg" alt="Our services 5" title="Our Services 5">
+                <div class="card-modal-trigger">
+                    <img id="services-modal-trigger" src="img/icons/icon-our-services.png" alt="Play" title="Play">
+                </div>                
             </div>
         </div>
     </div>
 <!-- fin de our services -->
+
+<!-- inicio de modal de our services -->
+    <div class="modal">
+        <button id="modal-close" class="modal-close">×</button>
+        <div class="modal-content">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v5DG2ockrjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+<!-- fin de modal de our services -->
 
     <!-- inicio de footer -->
     <footer>
@@ -230,6 +264,7 @@
     </footer>
     <!-- fin de footer -->
 
-    <script src="scripst/menu.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
