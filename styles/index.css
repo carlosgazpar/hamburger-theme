@@ -84,6 +84,16 @@ h6{
     text-transform: uppercase;
 }
 
+.tag{
+    background-color: #b94646;
+    color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 767px){
     .headings-container h1{
         font-size: 40px;
