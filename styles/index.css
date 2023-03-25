@@ -136,6 +136,39 @@ img{
     padding: 10px;
 }
 
+.page-heading{
+    padding-top: 200px;
+    position: relative;
+    display: flex;
+    align-items: end;
+
+}
+
+.page-heading::before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page-heading h1{
+    font-family: "Fredericka the Great";
+    font-size: 120px;
+    line-height: 100px;
+    font-weight: 400;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.page-heading .container{
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 767px){
     .headings-container h1{
         font-size: 40px;
@@ -145,4 +178,9 @@ img{
         line-height: 60px;
         top: .65em;
     }
+    .page-heading h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
+
