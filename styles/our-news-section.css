@@ -1,0 +1,113 @@
+.our-news-section{
+    margin-top: -30px;
+}
+
+.our-news-menu-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.our-news-menu-item:nth-child(2){
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.our-news-menu-img{
+    position: relative;
+    color: white;
+}
+
+.our-news-menu-img img{
+    height: 100%;
+    display: block;
+}
+
+.our-news-menu-img div{
+    position: absolute;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    top: 0;
+    left: 0;
+    background-color: rgba(101, 100, 96, .3);
+    display: flex;
+    align-items: end;
+    padding: 30px;
+}
+
+.our-news-menu-img div .icon-image{
+    position: absolute;
+    bottom: -22px;
+    right: 20px;
+}
+
+.our-news-menu-item:nth-child(2) .our-news-menu-img div .icon-image{
+    top: -22px;
+}
+
+.our-news-menu-img div span{
+    font-size: 13px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+
+}
+
+.our-news-menu-img div span:first-child::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/icon-user-white.svg);
+    display: block;
+    background-size: 20px;
+    margin-right: 10px;
+}
+
+.our-news-menu-img div span:nth-child(2)::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/icon-comment-3-white.svg);
+    display: block;
+    background-size: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.our-news-menu-text{
+    padding: 40px;
+
+}
+
+.our-news-menu-text h3{
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+.our-news-menu-text a{
+    color: #b94647;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 20px;
+    display: block;
+}
+
+@media screen and (max-width: 1200px){
+    .our-news-menu-cards{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .our-news-menu-item:nth-child(2){
+        flex-direction: column;
+    }
+    .our-news-menu-item:nth-child(2) .our-news-menu-img div .icon-image{
+        bottom: -22px;
+        top: auto;
+    }
+}
+
+
+
+

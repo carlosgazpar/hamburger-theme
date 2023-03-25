@@ -125,7 +125,15 @@ img{
     border: 0;
     outline: none;
     cursor: pointer;
+}
 
+.icon-image{
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: #b94646;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 767px){
