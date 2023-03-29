@@ -1,0 +1,79 @@
+.contact-form-map{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.contact-map,.contact-form{
+    width: 50%;
+}
+
+.contact-form h2{
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.contact-form p{
+    margin-bottom: 1.5em;
+
+}
+
+.contact-form .button{
+    width: 30%;
+}
+
+.contact-map-info{
+    margin-top: 20px;
+}
+
+.contact-map-info .contact-map-info-1{
+    display: flex;
+    gap: 30px;
+}
+
+.contact-map-info .contact-map-info-1 div{
+    width: 50%;
+}
+
+.contact-map-info .contact-map-info-1 div p{
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.contact-map-info .contact-map-info-1 div p:last-child{
+    border-bottom: 0;
+}
+
+.contact-map-info .contact-map-info-1 div p span:first-child{
+    color: #555555;
+}
+
+.contact-map-info .contact-map-info-2 p{
+    margin-top: 2em;
+    letter-spacing: 2px;
+}
+
+.contact-map-info .contact-map-info-2 h3{
+    font-size: 60px;
+    line-height: 60px;
+    color: #2d2d2d;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-form-map, .contact-map-info .contact-map-info-1{
+        flex-direction: column;
+    }
+    
+    .contact-map,.contact-form, .contact-form .button, .contact-map-info .contact-map-info-1 div{
+        width: 100%;
+    }
+    .contact-map-info .contact-map-info-1{
+        gap: 10px;
+    }
+}
+
+

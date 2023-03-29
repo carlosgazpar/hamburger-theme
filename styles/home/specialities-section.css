@@ -1,0 +1,67 @@
+.specialities-section{
+    margin-top: -20px;
+}
+
+.specialities-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+    margin-top: 60px;
+}
+
+.specialities-grid .specialities-grid-item{
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.specialities-grid .specialities-grid-item img{
+    width: 80px;
+    height: 80px;
+}
+.specialities-grid .specialities-grid-item .specialities-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    gap: 10px 0;
+}
+.specialities-grid .specialities-grid-item .specialities-info div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.specialities-grid .specialities-grid-item .specialities-info h4{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #2d2d2d;
+}
+
+.specialities-grid .specialities-grid-item .specialities-info p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+@media screen and (max-width: 1200px){
+    .specialities-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .specialities-grid{
+        gap: 30px;
+    }
+    .specialities-grid .specialities-grid-item{
+        display: block;
+    }
+    .specialities-grid .specialities-grid-item img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

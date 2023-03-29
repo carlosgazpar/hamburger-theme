@@ -1,0 +1,98 @@
+.contact{
+    display: flex;
+    gap: 0 45px;
+}
+
+.contact form, .contact .contact-categories{
+    width: 50%;
+}
+
+.contact form{
+    text-align: center;
+    padding: 60px 30px 30px 30px;
+    border: 1px solid #f1f1f1;
+}
+
+.contact form h5{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.contact form h2{
+    font-size: 25px;
+    line-height: 25px;
+    color: #2d2d2d;
+}
+
+.contact form button {
+    width: 100%;
+}
+
+.contact .contact-categories {
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+}
+
+.contact .contact-categories .contact-categories-item{
+    position: relative;
+}
+
+.contact .contact-categories .contact-categories-item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+}
+
+.contact .contact-categories .contact-categories-item:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.contact .contact-categories .contact-categories-item a{
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.contact .contact-categories .contact-categories-item img{
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px){
+    .contact{
+        display: block;
+    }
+    .contact form, .contact .contact-categories{
+        width: 100%;
+    }
+    .contact form{
+        padding: 20px;
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+    .contact .contact-categories {
+        grid: auto / 1fr;
+        gap: 20px;
+    }
+    .contact .contact-categories .contact-categories-item:first-child{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+}
