@@ -1,0 +1,156 @@
+.delivery-heading{
+    background-image: url(../../img/Delivery/background-delivery.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.delivery-order-now{
+    display: flex;
+    gap: 30px;
+}
+
+.delivery-order-now .delivery-order-now-1{
+    width: 66.66%;
+}
+
+.delivery-order-now .delivery-order-now-1 .headings-container{
+    margin-top: -2em;
+}
+
+.delivery-order-now-1-p{
+    display: flex;
+    padding: 40px 100px;
+    gap: 30px;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon{
+    background-image: url(../../img/Delivery/background-delivery-coupon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon img{
+    height: 50px;
+    width: 50px;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-text{
+    width: calc(66.66% - 50px);
+    color: white;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-text p{
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-button{
+    display: flex; 
+    align-items: center;
+    justify-content: right;
+    width: 33.33%;
+}
+
+.delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-button .button{
+    background-color: #d93535;
+    padding: 3px 20px;
+}
+
+.delivery-order-now-2{
+    padding: 100px 15px;
+    display: flex;
+    background-image: url(../../img/Delivery/background-delivery-coupon-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.delivery-order-now-2 h3{
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.delivery-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: -20px;
+}
+
+.delivery-gallery .delivery-gallery-item{
+    position: relative;
+}
+
+.delivery-gallery .delivery-gallery-item .delivery-gallery-overlay{
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(45,45,45,0.15) 0%,rgba(45,45,45,0.5) 75%,rgba(45,45,45,1) 100%);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.delivery-gallery .delivery-gallery-item .delivery-gallery-overlay .tag{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .delivery-order-now{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 0;
+    }
+    
+    .delivery-order-now .delivery-order-now-1,.delivery-order-now .delivery-order-now-2{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .delivery-order-now .delivery-order-now-1 .headings-container{
+        margin-top: 0;
+    }
+    
+
+    .delivery-order-now-1-p{
+        flex-direction: column;
+        padding: 20px 0 40px 0;
+        gap: 0;
+    }
+
+    .delivery-order-now-1 .delivery-order-now-1-coupon{
+        flex-direction: column;
+
+    }
+
+    .delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-button, .delivery-order-now-1 .delivery-order-now-1-coupon .delivery-coupon-text{
+        width: 100%;
+        justify-content: left;
+    }
+
+    .delivery-order-now-1 .delivery-order-now-1-coupon img{
+        display: none;
+    }
+
+    .delivery-gallery{
+        grid-template-columns: 1fr;
+    }
+}
