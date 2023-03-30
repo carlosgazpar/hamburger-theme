@@ -224,7 +224,6 @@
 <!-- fin de modal de our services -->
 
 <!-- inicio de seccion reservation -->
-
     <div class="reservation">
         <div class="reservation-content">
             <div class="reservation-heading">
@@ -233,11 +232,19 @@
             </div>
             <form>
                 <div class="reservation-form-date">
-                    <span>SET DATE:</span>
+                    <span class="reservation-form-date-heading">SET DATE:</span>
+                    <div class="reservation-form-date-calendar ">
+                        <span id="calendar-day"></span>
+                        <div>
+                            <span id="calentar-month"></span>
+                            <img src="img/icons/arrow-down.png">    
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-date">
+                    <span class="reservation-form-date-heading">GUESTS :</span>
                     <div>
-                        <span>18</span>
-                        <span>Mar</span>
-                        <img src="img/icons/arrow-down.png">
+                        <input type="number" min="1" value="1">
                     </div>
                 </div>
             </form>
@@ -529,5 +536,6 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/reservation.js"></script>
 </body>
 </html>                                                                                                                                                     
